@@ -121,6 +121,7 @@ res.plot_attr('Duration','hist')
 5. `5_arrayiterate.py`
 6. `6_arrayjoin.py`
 7. `7_arraysplit.py`
+8. `8_arraysearch.py`
 
 ## numpy main
 
@@ -268,6 +269,24 @@ print('dstack()')
 res1.return_dstack()
 ```
 ### 7 ArraySplit
+```python
+arr1 = [1,2,3,4,5,6]
+res1 = ArraySplit(arr1)
+res1.return_split(3,return_loop=True)
+arr2 = [[1,2],[3,4],[5,6],[7,8],[9,10],[11,12]]
+res2 = ArraySplit(arr2)
+res2.return_split(3)
+arr3 = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]]
+res3 = ArraySplit(arr3)
+res3.return_split(3)
+res3.return_split(3,axis=1)
+res3.return_split(3,h=True)
+res3.return_split(3,v=True)
+arr4 = [[[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]], [[12, 13, 14, 15], [16, 17, 18, 19], [20, 21, 22, 23]]]
+res4 = ArraySplit(arr4)
+res4.return_split(2,d=True) 
+```
+### 8 ArraySearch
 ```python
 
 ```
