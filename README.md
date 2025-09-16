@@ -2,7 +2,7 @@
 
 ---
 
-pandas -> numpy -> matplotlib
+pandas -> numpy -> numpy random -> numpy ufunc -> matplotlib
 
 ---
 
@@ -123,6 +123,7 @@ res.plot_attr('Duration','hist')
 7. `7_arraysplit.py`
 8. `8_arraysearch.py`
 9. `9_arraysort.py`
+10. `10_arrayfiler.py`
 
 ## numpy main
 
@@ -305,6 +306,24 @@ res4 = ArraySearch(arr4)
 res4.return_search([2,4,6])
 ```
 ### 9 ArraySort
+```python
+arr1 = [3,2,0,1]
+res1 = ArraySort(arr1)
+res1.return_sort()
+# other data type
+arr2 = ['banana','cherry','apple']
+res2 = ArraySort(arr2)
+res2.return_sort()
+# boolean
+arr3 = [True, False, True]
+res3 = ArraySort(arr3)
+res3.return_sort() # F -> T -> T
+# sorting 2-D array
+arr4 = [[3,2,4],[5,0,1]]
+res4 = ArraySort(arr4)
+res4.return_sort()
+```
+### 10 ArrayFiler
 ```python
 
 ```
