@@ -6,3 +6,6 @@ from .arrayshape import ArrayShape
 from .arrayiterate import ArrayIterate
 from .arrayjoin import ArrayJoin
 from .arraysplit import ArraySplit
+from .arraysearch import ArraySearch
+from .arraysort import ArraySort
+from .arrayfilter import ArrayFilter
