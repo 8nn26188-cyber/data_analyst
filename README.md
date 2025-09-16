@@ -123,7 +123,7 @@ res.plot_attr('Duration','hist')
 7. `7_arraysplit.py`
 8. `8_arraysearch.py`
 9. `9_arraysort.py`
-10. `10_arrayfiler.py`
+10. `10_arrayfilter.py`
 
 ## numpy main
 
@@ -323,9 +323,22 @@ arr4 = [[3,2,4],[5,0,1]]
 res4 = ArraySort(arr4)
 res4.return_sort()
 ```
-### 10 ArrayFiler
+### 10 ArrayFilter
 ```python
-
+arr1 = [41,42,43,44]
+x1 = [True,False,True,False]
+res1 = ArrayFilter(arr1)
+res1.return_arr(x1)
+# empty filter -> for loop put the elment in filter
+x2 = res1.filter_loop(lambda a: a > 42)
+res1.return_arr(x2)
+x3 = res1.filter_loop(lambda a: a%2 == 0)
+res1.return_arr(x3)
+# judgement without loop, do steps with the whole arr like: arr > nums
+x4 = res1.no_loop(lambda a: a > 42)
+res1.return_arr(x4)
+x5 = res1.no_loop(lambda a: a%2 == 1)
+res1.return_arr(x5)
 ```
 ## my_matplotlib list
 
