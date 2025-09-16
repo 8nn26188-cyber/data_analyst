@@ -122,6 +122,7 @@ res.plot_attr('Duration','hist')
 6. `6_arrayjoin.py`
 7. `7_arraysplit.py`
 8. `8_arraysearch.py`
+9. `9_arraysort.py`
 
 ## numpy main
 
@@ -287,6 +288,23 @@ res4 = ArraySplit(arr4)
 res4.return_split(2,d=True) 
 ```
 ### 8 ArraySearch
+```python
+arr1 = [1, 2, 3, 4, 5, 4, 4]
+res1 = ArraySearch(arr1)
+res1.return_where(lambda a: a == 4)
+arr2 = [1, 2, 3, 4, 5, 6, 7, 8]
+res2 = ArraySearch(arr2)
+res2.return_where(lambda a: a%2 == 0)
+res2.return_where(lambda a: a%2 == 1)
+arr3 = [6,7,8,9]
+res3 = ArraySearch(arr3)
+res3.return_search(7)
+res3.return_search(7,side='right')
+arr4 = [1,3,5,7]
+res4 = ArraySearch(arr4)
+res4.return_search([2,4,6])
+```
+### 9 ArraySort
 ```python
 
 ```
